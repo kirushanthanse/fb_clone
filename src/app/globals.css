@@ -1,107 +1,123 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+scrollbar-width: none;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.profile_pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 275px;
+  left: 100px;
+
+}
+.profile-name{
+  color: white;
+  position: absolute;
+  top: 330px;
+  left: 300px;
+ 
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.followers{
+  color: white;
+  position: absolute;
+  top: 370px;
+  left: 330px;
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* .cover_pic {
+
+  background-image: url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  margin-top: 50px;
+  background-size: cover;
+  width: 70%;
+  height: 400px;
+  position: relative;
+  top: 10px;
+  left: 15%;
+
+
+} */
+
+.cover-pic{
+
+width: 100%;
+height: 400px;
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.main-container{
+  
+  height: 460px;
+  margin-top: 60px;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 15%;
+  
+}
+
+
+
+
+   /* .dContainer{
+  background-size: cover;
+  width: auto;
+  height: 150px;
+
+  
+}    */
+
+
+.footer {
+  background-color: rgb(72, 78, 87);
+  width: 100%;
+  height: 13%;
+  position: relative;
+  left: 0;
+
+}
+
+.heade_bar {
+  background-color: rgb(37, 14, 141);
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity :initial
+}
+
+.nav-bar-color {
+  color: white;
+  font-size: 10px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.capitalize{
+  text-transform: capitalize;
+ 
+}
+
+
+
+.main{
+  position: relative;
+  width: 70%;
+  left: 15%;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
 }
